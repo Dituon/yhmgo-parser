@@ -1,4 +1,4 @@
-function parser(raw) {
+function parseResult(raw) {
     let result = '';
     const offset = 0x619;
     const rawLength = raw.length;
@@ -13,6 +13,6 @@ function parser(raw) {
 
 function test() {
     let raw = '23c7d4c5dcc3160d07bfc8bdd20ecb04c40df9f700fad6c1b3c2c4bcf0c1bebfece4b9bcb6b2b1c5b0a2b5ababa9aca9a6a7baa597dedfd29ce6e6e5e396d8d0dc92d4ccd88f9091ccc1bfa18c7e9e897b968778c5c1c4c3b66f866db6bbbdbd68716680aeb3b575706d6cb0966a75aaa29d736264a9a0935d9f91a48b9598568c98949751435a418a8f918b3c94'
-    let result = parser(raw)
+    let result = parseResult(raw)
     console.log(result)
 }
