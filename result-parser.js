@@ -9,6 +9,7 @@ function parseResult(raw) {
         ) % 0x100
         result = String.fromCharCode(temp) + result
     }
+    return result
 }
 
 function test() {
